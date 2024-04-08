@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .div {
+            height: 10rem;
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: minmax(150px, 25%) 1fr;
+        }
+        .div-1 {
+            background-color: lightgoldenrodyellow;
+        }
+        .div-2 {
+            background-color: pink;
+        }
+    </style>
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <div class="div">
+        <div class="div-1">Tengo un ancho mínimo de 150px, y un máximo del 25% <br> [215 x 141]</div>
+        <div class="div-2">Ocupo el resto de espacio sobrante <br> [644 x 141]</div>
+    </div>
+</body>
+</html>
