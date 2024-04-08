@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         img {width: 60px}
-
-        .div {
-            resize: both;
-            overflow: auto;
-            display: flex;
-            flex-wrap: wrap;
-            background-color: lightskyblue;
-            justify-content: center;
+        #span { display: flex;
+            justify-content: space-between;            
         }
-        .div div {
-            flex: 0 1 150px;
-            margin: 8px;
-            background-color:lightyellow;
+        #img {
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+            display: flex;
+            background-color: gray;
+            justify-content: center;
+            align-self: center;
+            padding: 100px;
         }
         a {
             margin-top: 9em;
@@ -26,16 +26,25 @@
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
             align-items: center;
         }
+
     </style>
-    <title>Ejercicio3</title>
+    <title>Ejercicio1</title>
 </head>
 <body>
-    <div class="div">
-        <div>Crezco hacia abajo y tengo un ancho máximo de 150px [150 x 173]</div>
-        <div>Crezco hacia abajo y tengo un ancho máximo de 150px [150 x 173]</div>
-        <div>Crezco hacia abajo y tengo un ancho máximo de 150px [150 x 173]</div>
+    
+    <div id="span">
+        <span>🤖</span>
+        <span>RobotWeb</span>
+        <span>🔎</span>
+    </div>
+    <div id="img">
+        <img src="img/1.webp">
+        <img src="img/2.webp">
+        <img src="img/3.webp">
+        <img src="img/4.webp">
     </div>
 
+    <p>Welcome to RobotWeb</p>
 
     <div class="index">
         
@@ -43,5 +52,6 @@
             <img src="img/home.webp" alt="index">
             Pagina de inicio</a>
     </div>
+    
 </body>
 </html>
